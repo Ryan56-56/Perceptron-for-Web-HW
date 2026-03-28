@@ -62,7 +62,6 @@
   <div id="samplesList"></div>
 
   <script>
-    // ----- Perceptron class (JS version of your Python code) -----
     class Perceptron {
       constructor(size) {
         this.weights = new Array(size).fill(0);
@@ -106,8 +105,6 @@
         return epoch + 1;
       }
     }
-
-    // ----- UI + data handling -----
     const GRID_SIZE = 4;
     const gridEl = document.getElementById('grid');
     const sampleCountEl = document.getElementById('sampleCount');
@@ -160,7 +157,6 @@
       });
     }
 
-    // Buttons
     document.getElementById('clearGrid').addEventListener('click', () => {
       clearGrid();
     });
